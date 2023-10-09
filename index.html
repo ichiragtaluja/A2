@@ -29,8 +29,8 @@
   <body>
     <header>
       <nav>
-        <div>
-          <a><img src="/images/logo/apple-touch-icon.png" /></a>
+        <div id="logo-container">
+          <a><img id="logo" src="/images/logo/apple-touch-icon.png" /></a>
         </div>
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -40,14 +40,20 @@
       </nav>
     </header>
     <main>
-      <section id="hero-section">
-        <h1>Welcome Title</h1>
-        <p>Welcoming text</p>
+      <section id="welcome-section">
+        <h1 id="welcome-title">Welcome to IMM News Network</h1>
+        <p id="welcome-text">
+          At IMM News Network, our mission is to provide a platform for
+          insightful reporting, in-depth analysis, and diverse perspectives. We
+          aim to foster a well-informed global community by delivering news that
+          matters most to you.
+        </p>
       </section>
 
       <section id="featured-section">
         <article id="featured-article">
           <img
+            id="featured-image"
             src="/images/article-images/industry/industry2.webp"
             alt="ford motor employees with united auto workers"
           />
@@ -199,7 +205,7 @@
       </section>
 
       <section id="visitors-section">
-        <table>
+        <table id="visitors-table">
           <tr>
             <th>Month</th>
             <th>Visitors</th>
@@ -231,7 +237,7 @@
         </table>
       </section>
 
-      <section id="hero-video-section">
+      <section id="video-section">
         <iframe
           width="560"
           height="315"
@@ -243,6 +249,6 @@
         ></iframe>
       </section>
     </main>
-    <footer><a href="#">Accept cookies</a></footer>
+    <footer id="cookies"><a href="#">Accept cookies</a></footer>
   </body>
 </html>
