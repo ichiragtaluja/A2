@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A news website" />
+    <meta name="keywords" content="News, IMM, Career, Technical, Industry" />
+    <meta name="author" name="Chirag Taluja" />
 
     <link
       rel="apple-touch-icon"
@@ -28,12 +31,8 @@
   <body>
     <header>
       <nav>
-        <div>
-          <a
-            ><img
-              src="/images/logo/apple-touch-icon.png"
-              alt="Joe Biden talking to his collegue while walking"
-          /></a>
+        <div id="logo-container">
+          <a><img id="logo" src="/images/logo/apple-touch-icon.png" /></a>
         </div>
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -44,7 +43,7 @@
     </header>
 
     <main>
-      <section>
+      <section class="article-title-section">
         <h1>
           How the Big Chip Makers Are Pushing Back on Biden’s China Agenda
         </h1>
@@ -52,9 +51,13 @@
       </section>
 
       <section>
-        <img src="/images/article-images/technical/technical1.webp" />
+        <img
+          class="article-image-section"
+          src="/images/article-images/technical/technical1.webp"
+          alt="Joe Biden talking to his collegue while walking"
+        />
       </section>
-      <section>
+      <section class="article-text-section">
         <p>
           A year after the Biden administration took its first major step toward
           restricting the sale of semiconductors to China, it has begun drafting

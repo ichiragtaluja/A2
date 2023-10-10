@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A news website" />
+    <meta name="keywords" content="News, IMM, Career, Technical, Industry" />
+    <meta name="author" name="Chirag Taluja" />
 
     <link
       rel="apple-touch-icon"
@@ -28,8 +31,8 @@
   <body>
     <header>
       <nav>
-        <div>
-          <a><img src="/images/logo/apple-touch-icon.png" /></a>
+        <div id="logo-container">
+          <a><img id="logo" src="/images/logo/apple-touch-icon.png" /></a>
         </div>
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -40,17 +43,18 @@
     </header>
 
     <main>
-      <section>
+      <section class="article-title-section">
         <h1>MrBeast and BBC stars used in deepfake scam videos</h1>
         <p>Author: Tom Gerken</p>
       </section>
       <section>
         <img
+          class="article-image-section"
           src="/images/article-images/technical/technical2.webp"
           alt="an image of Mr. Beast"
         />
       </section>
-      <section>
+      <section class="article-text-section">
         <p>
           Deepfakes use artificial intelligence (AI) to make a video of someone
           by manipulating their face or body. One such video appeared on TikTok

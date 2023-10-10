@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A news website" />
+    <meta name="keywords" content="News, IMM, Career, Technical, Industry" />
+    <meta name="author" name="Chirag Taluja" />
 
     <link
       rel="apple-touch-icon"
@@ -28,8 +31,8 @@
   <body>
     <header>
       <nav>
-        <div>
-          <a><img src="/images/logo/apple-touch-icon.png" /></a>
+        <div id="logo-container">
+          <a><img id="logo" src="/images/logo/apple-touch-icon.png" /></a>
         </div>
         <ul>
           <li><a href="/index.html">Home</a></li>
@@ -40,7 +43,7 @@
     </header>
 
     <main>
-      <section>
+      <section class="article-title-section">
         <h1>
           Ford CEO says UAW is ‘holding the deal hostage’ over EV battery plants
         </h1>
@@ -48,11 +51,12 @@
       </section>
       <section>
         <img
+          class="article-image-section"
           src="/images/article-images/industry/industry2.webp"
           alt="ford motor employees with united auto workers"
         />
       </section>
-      <section>
+      <section class="article-text-section">
         <p>
           The United Auto Workers union is holding up negotiations with Ford
           Motor over future electric vehicle battery plants, Ford CEO Jim Farley
