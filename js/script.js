@@ -74,3 +74,36 @@ function acceptOrRevokeCookies(e) {
     cookies.appendChild(a);
   }
 }
+
+// Part 3: Reading Assistance
+
+let increaseContrast = false;
+
+const changeContrastButton = document.querySelector("#change-contrast");
+
+changeContrastButton.addEventListener("click", changeContrast);
+
+function changeContrast() {
+  const body = document.querySelector("body");
+  if (!increaseContrast) {
+    body.style.backgroundColor = "black";
+    body.style.color = "white";
+    body.style.padding = "20px";
+    body.style.lineHeight = "1.5";
+    body.style.letterSpacing = "1px";
+    increaseContrast = !increaseContrast;
+    changeContrastButton.textContent = "Decrease Contrast";
+  } else {
+    body.style.backgroundColor = "white";
+    body.style.color = "black";
+    body.style.padding = "10px";
+    body.style.lineHeight = "normal";
+    body.style.letterSpacing = "normal";
+    increaseContrast = !increaseContrast;
+    changeContrastButton.textContent = "Increase Contrast";
+  }
+}
+
+// Part 4: Keyboard Shortcut
+
+
